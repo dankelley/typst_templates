@@ -12,6 +12,7 @@ set page("us-letter",
   header: [
   *#class Exercise #number #h(1fr) #title #h(1fr) #date*
 ])
+show heading.where(level: 1): set text(font: "Times Roman", size: 12pt)
 doc
 }
 
