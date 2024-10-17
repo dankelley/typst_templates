@@ -2,7 +2,6 @@
   category: none,
   title: none,
   date: none,
-  venu: none,
   preface: none,
   doc,
 ) = {
