@@ -1,0 +1,7 @@
+[package]
+name = "memo"
+version = "0.0.1"
+entrypoint = "memo.typ"
+authors = ["Dan Kelley"]
+license = "MIT"
+description = "General memos"
