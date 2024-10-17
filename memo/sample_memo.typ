@@ -3,13 +3,13 @@
 category: "Memo",
 title: "A beautiful day",
 date: "2024-10-17",
-venu: "Nova Scotia",
-preface: [*Abstract.* what's not to love?],
+preface: [*Abstract.* I wonder, what's not to love?],
 doc,
 )
 
 Crisp air, blue sky with scattered clouds, sunlight through colouring leaves.
 It's just a little bit of heaven, in this lovely place at this time.
+
 
 
 
