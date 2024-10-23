@@ -4,7 +4,7 @@ category: "Memo",
 title: "A beautiful day",
 date: "2024-10-17",
 fontsize: 13pt,
-preface: [*Abstract.* I wonder, what's not to love?],
+preface: [_I wonder, what's not to love?_],
 doc,
 )
 
