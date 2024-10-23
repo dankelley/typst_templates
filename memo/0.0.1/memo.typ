@@ -1,8 +1,8 @@
 #let conf(
-  category: none,
-  title: none,
-  date: none,
-  preface: none,
+  category: "category",
+  title: "title",
+  date: "date",
+  preface: "preface",
   font: "times",
   fontsize: 12pt,
   doc,
