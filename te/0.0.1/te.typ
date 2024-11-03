@@ -7,7 +7,7 @@
   instructions: none,
   doc,
 ) = {
-set text(font: "Times Roman", size: 14pt)
+set text(font: "times", size: 14pt)
 set page("us-letter",
   header: [
   *#course*
@@ -17,7 +17,7 @@ set page("us-letter",
   *#date*
 ])
 text(12pt)[*Instructions.* #instructions]
-show heading.where(level: 1): set text(font: "Times Roman", size: 14pt)
+show heading.where(level: 1): set text(font: "times", size: 14pt)
 doc
 }
 
