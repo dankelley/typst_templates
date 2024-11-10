@@ -26,9 +26,16 @@ text(size: 0.9em)[#preface] // reduce size to 90%
 // set text(weight: "regular", style: "italic", it.body)
 // ]
 
-show heading.where(level: 1): it => text(weight: "bold", it.body)
+show heading.where(level: 1): it => [
+#set align(center)
+#set text(1.1em, weight: "bold")
+#block(above: 0.5em, below: 0.5em, smallcaps(it.body))
+]
 
-show heading.where(level: 2): it => text(weight: "regular", style: "italic", it.body)
+show heading.where(level: 2): it => [
+#set text(0.9em, weight: "regular", style: "italic")
+#block(above: 0.8em, below: 0.5em, smallcaps(it.body))
+]
 
 doc
 }
