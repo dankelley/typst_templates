@@ -8,6 +8,7 @@
   doc,
 ) = {
 set text(font: font, size: fontsize)
+set par(linebreaks: "optimized")
 set page("us-letter",
   header: context {
   if counter(page).get().first() < 2 [
@@ -29,12 +30,12 @@ text(size: 0.9em)[#preface] // reduce size to 90%
 show heading.where(level: 1): it => [
 #set align(center)
 #set text(1.1em, weight: "bold")
-#block(above: 0.5em, below: 0.5em, smallcaps(it.body))
+#block(above: 0.5em, below: 0.5em, it.body)
 ]
 
 show heading.where(level: 2): it => [
 #set text(0.9em, weight: "regular", style: "italic")
-#block(above: 0.8em, below: 0.5em, smallcaps(it.body))
+#block(above: 1.4em, below: 0.8em, smallcaps(it.body))
 ]
 
 doc
