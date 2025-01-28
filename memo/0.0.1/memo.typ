@@ -3,7 +3,8 @@
   title: "title",
   date: "date",
   preface: "preface",
-  font: "times",
+  author: "author",
+  font: "libertinus serif",
   fontsize: 11pt,
   doc,
 ) = {
@@ -13,9 +14,10 @@ set page("us-letter",
   header: context {
   if counter(page).get().first() < 2 [
   *#category #h(1fr) #title #h(1fr) #date*
+  #author
 ]})
 set page(numbering: "1")
-text(size: 0.9em)[#preface] // reduce size to 90%
+text(size: 1.0em)[#preface] // reduce size to 90%
 
 // show heading.where(level: 1): it => [
 // set block(above: 1.0em, below: 0.2em)
@@ -27,16 +29,22 @@ text(size: 0.9em)[#preface] // reduce size to 90%
 // set text(weight: "regular", style: "italic", it.body)
 // ]
 
-show heading.where(level: 1): it => [
-#set align(center)
-#set text(1.1em, weight: "bold")
-#block(above: 0.5em, below: 0.5em, it.body)
+show heading.where(
+  level: 1
+): it => block(width: 100%)[
+  #set align(center)
+  #set text(size: 1.0em, weight: "regular")
+  #smallcaps(it.body)
 ]
 
-show heading.where(level: 2): it => [
-#set text(0.9em, weight: "regular", style: "italic")
-#block(above: 1.4em, below: 0.8em, smallcaps(it.body))
-]
+show heading.where(
+  level: 2
+): it => text(
+  size: 1.0em,
+  weight: "regular",
+  style: "italic",
+  it.body + [.],
+)
 
 doc
 }
