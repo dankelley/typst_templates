@@ -1,0 +1,7 @@
+[package]
+name = "thesis_proposal"
+version = "0.0.1"
+entrypoint = "thesis_proposal.typ"
+authors = ["Dan Kelley"]
+license = "MIT"
+description = "For thesis proposals in the Department of Oceanography at Dalhousie University."

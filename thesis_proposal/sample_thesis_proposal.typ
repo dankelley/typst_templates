@@ -1,12 +1,13 @@
-#import "@local/memo:0.0.1": conf
+#import "@local/thesis_proposal:0.0.1": conf
 #show: doc => conf(
-category: "Memo",
-title: "A beautiful day",
-date: "2024-10-17",
+title: [Insert proposal title here],
+student: [Insert author name here],
+program: [Insert BSc, MSc or PhD here],
+keywords: [Insert keywords here (semicolon-separated)],
+abstract: [_Abstract._ Insert abstract here],
+date: "2025-06-20",
 font: "libertinus serif",
 fontsize: 11pt,
-author: "Someone wrote this",
-preface: [_Abstract._ I wonder, what's not to love?],
 doc,
 )
 
