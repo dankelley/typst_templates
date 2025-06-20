@@ -6,8 +6,6 @@ program: [Insert BSc, MSc or PhD here],
 keywords: [Insert keywords here (semicolon-separated)],
 abstract: [_Abstract._ Insert abstract here],
 date: "2025-06-20",
-font: "libertinus serif",
-fontsize: 11pt,
 doc,
 )
 

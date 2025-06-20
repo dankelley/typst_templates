@@ -19,8 +19,12 @@ set page("us-letter",
   *#date*
 ])
 text(12pt)[*Keywords.* #keywords]
+
+linebreak()
 text(12pt)[*Abstract.* #abstract]
+
 show heading.where(level: 1): set text(font: "times", size: 14pt)
+linebreak()
 doc
 }
 
