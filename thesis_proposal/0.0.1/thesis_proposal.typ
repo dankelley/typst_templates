@@ -1,30 +1,57 @@
 // https://typst.app/docs/tutorial/making-a-template/
 // https://github.com/typst/packages/?tab=readme-ov-file#local-packages
 #let conf(
-  title: none,
-  student: none,
-  program: none,
-  date: none,
-  keywords: none,
-  abstract: none,
+  title: [],
+  program: [],
+  student: [],
+  previousDegrees: [],
+  sdate: [],
+  ddate: [],
+  adate: [],
+  keywords: (),
+  abstract: [],
+  MIP: none,
   doc,
 ) = {
-set text(font: "times", size: 12pt)
+set text(font: "libertinus serif", size: 12pt)
 set page("us-letter",
   header: [
-  *#title*
+  *#program Proposal*
   #h(1fr)
-  *#student*
-  #h(1fr)
-  *#date*
+  #student
 ])
-text(12pt)[*Keywords.* #keywords]
+
+smallcaps[#program Proposal]
+linebreak()
+
+text(12pt)[#title]
+linebreak()
+
+text(12pt)[#student]
+linebreak()
+text(11pt)[*Previous degree(s):* #previousDegrees]
 
 linebreak()
-text(12pt)[*Abstract.* #abstract]
 
-show heading.where(level: 1): set text(font: "times", size: 14pt)
+text(12pt)[
+  *Candidate:* #student
+  #v(8pt)
+  *Keywords:* #{keywords.join("; ")}.
+]
 linebreak()
+
+text(11pt)[
+  Submitted #sdate,
+  #MIP months in program;
+  defended #ddate;
+  accepted #adate
+]
+
+text(11pt)[
+  #v(5pt)
+  *Abstract.* #abstract
+]
+
 doc
 }
 
